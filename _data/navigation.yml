@@ -1,0 +1,4 @@
+- name: Home
+  url: /
+- name: Privilege Escalation
+  url: /Priv-esc.html
