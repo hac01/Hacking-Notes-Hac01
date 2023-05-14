@@ -1,6 +1,21 @@
----
-layout: default
-title: Linux Privilege Escalation
----
 
-{% include_relative /Priv-esc/Linux-privilege-escalation.md %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Markdown Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it@12.2.0/dist/markdown-it.min.js"></script>
+</head>
+<body>
+  <div id="markdown"></div>
+  <script>
+    fetch('/Priv-esc/Linux-privilege-escalation.md')
+      .then(response => response.text())
+      .then(text => {
+        const markdown = window.markdownit();
+        const html = markdown.render(text);
+        document.querySelector('#markdown').innerHTML = html;
+      });
+  </script>
+</body>
+</html>
