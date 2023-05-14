@@ -1,3 +1,11 @@
 theme: jekyll-theme-hacker
-baseurl:  /Hacking-Notes-Hac01
+baseurl: /Hacking-Notes-Hac01
 markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+      type: "posts" # can also be "pages"
+    values:
+      layout: "default"
