@@ -1,21 +1,2 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Linux privilege escalation </title>
-  <script src="https://cdn.jsdelivr.net/npm/markdown-it@12.2.0/dist/markdown-it.min.js"></script>
-</head>
-<body>
-  <div id="markdown"></div>
-  <script>
-    fetch('/Priv-esc/Linux-privilege-escalation.md')
-      .then(response => response.text())
-      .then(text => {
-        const markdown = window.markdownit();
-        const html = markdown.render(text);
-        document.querySelector('#markdown').innerHTML = html;
-      });
-  </script>
-</body>
-</html>
+Linux-privilege-escalation(2).pdf
+<iframe src="Priv-esc/Linux-privilege-escalation(2).pdf" width="100%" height="800px"></iframe>
